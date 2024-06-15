@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  width: 98%;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lease-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+
+input[type="number"],
+input[type="range"],
+select {
+  width: 100%;
+  padding: 10px 3px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#downPaymentValue {
+  display: inline-block;
+  margin-left: 10px;
+  color: black;
+}
+
+.vertical {
+  margin-right: 60px;
+  border-left: 2px solid #ddd;
+  height: 80px;
+}
+
+#results {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.result-column {
+  width: 48%;
+}
+
+.result-column p {
+  /* background: #f9f9f9; */
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  form {
+    display: block;
+    padding: 20px;
+  }
+
+  input[type="number"],
+  input[type="range"],
+  select {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .lease-form {
+    margin-left: 0;
+  }
+
+  .vertical {
+    display: none;
+  }
+
+  #results {
+    flex-direction: column;
+  }
+
+  .result-column {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
